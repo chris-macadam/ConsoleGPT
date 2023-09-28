@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGPT", "ConsoleGPT\ConsoleGPT.csproj", "{13317EA5-6506-445B-BF02-DAB6D1FB3DE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13317EA5-6506-445B-BF02-DAB6D1FB3DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13317EA5-6506-445B-BF02-DAB6D1FB3DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13317EA5-6506-445B-BF02-DAB6D1FB3DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13317EA5-6506-445B-BF02-DAB6D1FB3DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C667E885-A230-40D5-AB82-E12746F33724}
+	EndGlobalSection
+EndGlobal

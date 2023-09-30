@@ -7,8 +7,6 @@ namespace ConsoleGPT
 {
     internal class Program
     {
-        const string ApiKeyFileName = ".openai";
-
         public static bool IsRunning { get; private set; } = true;
 
         static async Task Main(string[] args)
@@ -41,6 +39,12 @@ namespace ConsoleGPT
 
                 Console.WriteLine();
 
+                if (userInput.Trim().ToLower() == "quit" || userInput.Trim().ToLower() == "exit")
+                {
+                    IsRunning = false;
+                    return;
+                }
+
                 conversation.AppendUserInput(userInput);
                 await conversation.StreamResponseFromChatbotAsync(Console.Write);
 
@@ -52,6 +56,8 @@ namespace ConsoleGPT
 
         private static APIAuthentication GetValidAuthentication()
         {
+            const string ApiKeyFileName = ".openai";
+
             APIAuthentication authentication = APIAuthentication.LoadFromPath(filename: ApiKeyFileName);
 
             while (authentication == null || authentication.ValidateAPIKey().Result == false)
